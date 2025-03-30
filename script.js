@@ -1,19 +1,13 @@
 function calcularNota() {
-    let notaParcial = parseFloat(document.getElementById("notaParcial").value);
-    let notaFinal = parseFloat(document.getElementById("notaFinal").value);
-    
-    if (isNaN(notaParcial) || isNaN(notaFinal)) {
-        document.getElementById("resultado").innerText = "Ingresa valores válidos.";
+    var notaSemestre = parseFloat(document.getElementById("notaParcial").value);
+
+    if (isNaN(notaSemestre)) {
+        document.getElementById("resultado").innerText = "Ingresa una nota válida.";
         return;
     }
 
-    let notaNecesaria = (28 - (notaParcial * 0.35 + notaFinal * 0.35)) / 0.3;
+    var notaSupletorio = Math.max(24, (24 * 2) - notaSemestre);
 
-    if (notaNecesaria > 10) {
-        document.getElementById("resultado").innerText = "No es posible aprobar con supletorio.";
-    } else if (notaNecesaria < 0) {
-        document.getElementById("resultado").innerText = "¡Ya aprobaste la materia!";
-    } else {
-        document.getElementById("resultado").innerText = `Necesitas ${notaNecesaria.toFixed(2)} en el supletorio.`;
-    }
+    document.getElementById("resultado").innerText =
+        "El estudiante necesita sacar al menos una nota de " + notaSupletorio.toFixed(2) + " en el supletorio para pasar.";
 }

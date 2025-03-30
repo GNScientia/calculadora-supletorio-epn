@@ -1,8 +1,8 @@
 function calcularNota() {
-    var notaSemestre = parseFloat(document.getElementById("notaParcial").value);
+    var notaSemestre = parseFloat(document.getElementById("nota_semestre").value);
 
-    if (isNaN(notaSemestre)) {
-        document.getElementById("resultado").innerText = "Ingresa una nota válida.";
+    if (isNaN(notaSemestre) || notaSemestre < 0 || notaSemestre > 40) {
+        document.getElementById("resultado").innerText = "Por favor ingresa una nota válida entre 0 y 40.";
         return;
     }
 

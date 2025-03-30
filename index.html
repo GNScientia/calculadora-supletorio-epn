@@ -9,10 +9,12 @@
 <body>
     <div class="container">
         <h1>Calculadora de Nota de Supletorio</h1>
-        <label for="notaParcial">Nota Parcial:</label>
+        <p class="descripcion">Aquí podrás calcular cuánto necesitas alcanzar en el examen final (supletorio) para aprobar la materia.</p>
+        
+        <label for="notaParcial">Nota Parcial (35%):</label>
         <input type="number" id="notaParcial" step="0.1" min="0" max="10">
         
-        <label for="notaFinal">Nota Final:</label>
+        <label for="notaFinal">Nota Final (35%):</label>
         <input type="number" id="notaFinal" step="0.1" min="0" max="10">
         
         <button onclick="calcularNota()">Calcular Nota Necesaria</button>

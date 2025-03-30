@@ -1,46 +1,52 @@
 :root {
-    --color-primario: #3498db;  /* Azul - Puedes cambiarlo */
-    --color-secundario: #2ecc71; /* Verde - Puedes cambiarlo */
-    --color-fondo: #f4f4f4;
-    --color-texto: #333;
+    --color-primario: #e67e22;  /* Naranja */
+    --color-secundario: #2980b9; /* Azul */
+    --color-fondo: #f4f4f9;
+    --color-texto: #2c3e50;
 }
 
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 20px;
     background-color: var(--color-fondo);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    background: white;
+    background-color: white;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
 }
 
 h1 {
     color: var(--color-primario);
+    font-size: 28px;
 }
 
 .descripcion {
     font-size: 16px;
     color: #555;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 label {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: var(--color-texto);
 }
 
 input {
     width: 100%;
+    padding: 10px;
     margin: 10px 0;
-    padding: 8px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -49,21 +55,22 @@ input {
 button {
     background-color: var(--color-secundario);
     color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+    padding: 12px 0;
     width: 100%;
+    font-size: 18px;
+    border: none;
     border-radius: 5px;
-    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #27ae60;
+    background-color: #1c6ea4;
 }
 
 #resultado {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 20px;
     color: var(--color-primario);
 }

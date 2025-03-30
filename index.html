@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
-<link rel="stylesheet" type="text/css" href="styles.css">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Nota Supletorio EPN (By GN Scientia)</title>
+    <title>Calculadora de Notas Supletorio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculadora de Nota Supletorio EPN (By GN Scientia)</h1>
-    <label for="nota_semestre">Ingrese la nota del estudiante en el semestre (sobre 40, siempre y cuando esté entre 18 y 27.99. Caso contrario, no se podrá rendir el supletorio): </label>
-    <input type="number" id="nota_semestre" name="nota_semestre" required>
-    <button onclick="calcularNota()">Calcular</button>
-    <p id="resultado"></p>
+    <div class="container">
+        <h1>Calculadora de Notas Supletorio</h1>
+        <p class="descripcion">Aquí podrás calcular cuánto necesitas alcanzar en el examen final (supletorio) para aprobar la materia.</p>
 
-    <script>
-        function calcularNota() {
-            var notaSemestre = parseFloat(document.getElementById('nota_semestre').value);
-            var notaSupletorio = Math.max(24, (24 * 2) - notaSemestre);
-            document.getElementById('resultado').innerText = "El estudiante necesita sacar al menos una nota de " + notaSupletorio.toFixed(2) + " en el supletorio para pasar.";
-        }
-    </script>
+        <label for="nota_semestre">Ingrese la nota del estudiante en el semestre (sobre 40):</label>
+        <input type="number" id="nota_semestre" name="nota_semestre" required placeholder="Ejemplo: 30">
+
+        <button onclick="calcularNota()">Calcular</button>
+
+        <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+

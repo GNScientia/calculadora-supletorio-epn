@@ -19,3 +19,8 @@ function calcularNota() {
             "El estudiante necesita sacar al menos una nota de " + notaSupletorio.toFixed(2) + " en el supletorio para pasar.";
     }
 }
+
+// Función para redirigir al usuario a otra página cuando se presione el botón
+function redireccionar() {
+    window.location.href = "https://www.ejemplo.com";  // Cambia esto por la URL de la página de destino
+}

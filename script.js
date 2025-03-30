@@ -22,5 +22,5 @@ function calcularNota() {
 
 // Función para redirigir al usuario a otra página cuando se presione el botón
 function redireccionar() {
-    window.location.href = "gnscientia.ec";  // Cambia esto por la URL de la página de destino
+    window.location.href = "https://www.gnscientia.ec";  // Cambia esto por la URL de la página de destino
 }

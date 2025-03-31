@@ -1,7 +1,7 @@
 :root {
     --color-primario: #e67e22;  /* Naranja */
-    --color-secundario: #2980b9; /* Azul */
-    --color-fondo: #f4f4f9;
+    --color-secundario: #1f6463; /* Azul */
+    --color-fondo: #091935;
     --color-texto: #2c3e50;
 }
 
@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    background-color: blue;
+    background-color: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);

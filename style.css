@@ -54,7 +54,7 @@ input {
 
 button {
     background-color: var(--color-secundario);
-    color: red;
+    color: white;
     padding: 12px 0;
     width: 100%;
     font-size: 18px;
